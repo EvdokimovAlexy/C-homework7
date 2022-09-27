@@ -5,9 +5,9 @@
 int rows = ReadInt("Введите индекс строки: ");
 int colums = ReadInt("Введите индекс столбца: ");
 int[,] numbers = new int[6, 7];
-FillArray2D(numbers);
-PrintArray2D(numbers);
-void FillArray2D(int[,] array)
+FillArrayRandomNumbers(numbers);
+PrintArray(numbers);
+void FillArrayRandomNumbers(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -25,7 +25,7 @@ else
 {
     Console.WriteLine($"{rows}{colums} -> такого числа в массиве нет");
 }
-void PrintArray2D(int[,] array)
+void PrintArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
